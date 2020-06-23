@@ -1,0 +1,23 @@
+mat-card-title {
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-card-actions {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

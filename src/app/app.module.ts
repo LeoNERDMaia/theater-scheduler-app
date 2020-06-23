@@ -1,15 +1,16 @@
-import { MaterialModule } from './material.module';
+import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 
 // Core imports
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Firebase imports
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore'; // Firestore database
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,10 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'; // Firestore d
     BrowserAnimationsModule,
     AngularFireModule,
     AngularFirestoreModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule,
+
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
